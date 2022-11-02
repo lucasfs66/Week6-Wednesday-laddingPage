@@ -1,5 +1,26 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  },
+  "name": "landingpage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfs66/Week6-Wednesday-laddingPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasfs66/Week6-Wednesday-laddingPage/issues"
+  },
+  "homepage": "https://github.com/lucasfs66/Week6-Wednesday-laddingPage#readme",
+  "description": ""
 }

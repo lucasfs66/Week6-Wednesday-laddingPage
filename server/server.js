@@ -11,3 +11,4 @@ app.get('/', home)
 
 const {PORT} = process.env
 
+app.listen(PORT, () => console.log(`Server lightening on port ${PORT}`))

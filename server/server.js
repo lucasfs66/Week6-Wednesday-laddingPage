@@ -20,6 +20,12 @@ try {
     rollbar.critical('You are very ugly')
 }
 
+try{
+    bwvhisbvi()
+}catch{
+    rollbar.warning('do not go through this path')
+}
+
 const app = express()
 
 

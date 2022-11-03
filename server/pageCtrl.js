@@ -9,5 +9,8 @@ module.exports = {
     },
     styles:(req, res) => {
         res.sendFile(path.join(__dirname, ".././index.css"))
+    },
+    javascript: (req, res) => {
+        res.sendFile(path.join(__dirname, ".././index.js"))
     }
 }

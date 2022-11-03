@@ -14,17 +14,9 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
-try {
-    wdhbvhcbsdv()
-} catch{
-    rollbar.critical('You are very ugly')
-}
 
-try{
-    bwvhisbvi()
-}catch{
-    rollbar.warning('do not go through this path')
-}
+
+
 
 const app = express()
 
@@ -33,11 +25,26 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const {home, styles} = require('./pageCtrl')
+const {home, styles, javascript} = require('./pageCtrl')
 
 app.get("/", home)
 app.get("/styles", styles)
+app.get("/javascript", javascript)
+app.post('/test', (req, res) => {
+    try {
+     slkfelswefjl()
+    } catch {
+     rollbar.critical('You are ugly')
+    }
 
+
+    try{
+        bwvhisbvi()
+    }catch{
+        rollbar.warning('do not go through this path')
+    }
+
+});
 const {PORT} = process.env
 
 app.listen(PORT, () => console.log(`Server lightening on port ${PORT}`))
